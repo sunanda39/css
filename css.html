@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS</title>
+<style>
+    .wrapper{
+
+        display: grid;
+        grid-template-columns:repeat(3, 1fr);
+        grid-gap: 1em;
+        grid-auto-rows: minmax(100px, auto);
+    }
+
+
+.nested{
+    display: grid;
+    grid-template-columns:repeat(3, 1fr);
+    grid-auto-rows: 70px;
+    grid-gap:1em;
+}
+.wrapper > div{
+    background: #eee;
+    padding: 1em;
+}
+.wrapper> div:nth-child(odd){
+    background: pink;
+   }
+   .nested > div{
+       border: #333 1px solid;
+       padding: 1em;
+   }
+</style>
+    </head>
+    <body>
+<div class="wrapper">
+    <div>
+        Agolu Sunanda
+    </div>
+    <div>
+        There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text
+    </div>
+    <div class="nested">
+        <div> Agolu Sunanda</div>
+        <div> Agolu Sunanda</div>
+        <div> Agolu Sunanda</div>
+        <div> Agolu Sunanda</div>
+        <div> Agolu Sunanda</div>
+        <div> Agolu Sunanda</div>
+
+    </div>
+    <div>
+        Agolu Sunanda
+    </div>
+    <div>
+       Agolu Sunanda
+    </div>
+    <div>
+       Agolu Sunanda
+    </div>
+</div>
+    </body>
+</html>
